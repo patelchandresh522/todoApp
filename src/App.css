@@ -1,5 +1,52 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addTask{
+  padding:3em;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.list{
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.task{
+  width: 80%;
+  display: flex; 
+  justify-content: space-between;
+  padding: 1vw;
+  margin: 1vw auto;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.task h1{
+  margin: 0;
+  padding: 1vw;
+  
+}
+
+#listp{
+  color: rgb(220, 19, 102);
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+#ptodo{
+  font-weight: bolder;
+  color: rgb(38, 13, 223);
+  font-size: 1.6vw;
 }
 
 .App-logo {
@@ -24,6 +71,10 @@
   color: white;
 }
 
+#delete{
+  background-color: red;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +86,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.task .btns {
+  width:30%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.task button{
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
 }
